@@ -1,8 +1,35 @@
-# React + Vite
+# React Dockerized Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
+This is a Dockerized React application. It is designed to provide a simple and efficient setup for development and deployment using Docker.
 
-Currently, two official plugins are available:
+# Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ensure you have the following installed on your machine:
+
+- **Docker**
+
+# Installation
+
+Follow the steps below to install and run the React application using Docker:
+
+ **1. Clone the Repository**
+    Clone the project repository to your local machine:
+
+    - git clone <repository-url>
+    - cd <project-directory>
+
+  **2. Build the Docker Image**  
+     Run the following command to build the Docker image:
+
+    - docker build -t react-app:dev .
+    
+  **3. Run the Docker Container**  
+   Start the Docker container with the following command:
+
+    - docker run -p 5173:5173 react-app:dev
+
+   **Access the Application**
+
+   Open your browser and navigate to **http://localhost:5173** to access the React application.
+
